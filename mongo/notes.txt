@@ -1,5 +1,7 @@
 docker run -p 27017:27017 -d mongo
 docker logs -f <container_id>
+docker image inspect mongo // To see image layers
+docker images -q --no-trunc // To see first hash sha256 of every docker image
 
 UTIL:
 
@@ -10,3 +12,6 @@ OBS:
 	Spring boot already has an automatic detection of mongodb so we don't have
 	to override any external property in order to connect it, just to declare the
 	link of ports while running the mongo container.
+
+	Full format of a docker image tag: <registry_host/><username/>name<:tag>
+	Inferred registry host: registry.hub.docker.com
