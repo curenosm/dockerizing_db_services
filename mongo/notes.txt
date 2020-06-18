@@ -1,1 +1,2 @@
 docker run -p 27017:27017 -d mongo
+docker logs -f <container_id>
