@@ -2,6 +2,7 @@ docker run -p 27017:27017 -d mongo
 docker logs -f <container_id>
 docker image inspect mongo // To see image layers
 docker images -q --no-trunc // To see first hash sha256 of every docker image
+docker run -p 27017:27017 -v /Users/ubuntu/dockerdata/mongo:/data/db -d mongo
 
 UTIL:
 
